@@ -1,0 +1,24 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.main {
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+#sidePost > ul > .sidePost:hover {
+    background-color: #ffffff;
+    transition: all ease-in-out .2s;
+}
+
+.card >.post {
+    background-color: white;
+}
+
+.card > .post:hover {
+    background-color: #f9f9f9;
+    transition: all ease-in-out .2s;
+}
