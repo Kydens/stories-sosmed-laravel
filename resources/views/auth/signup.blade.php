@@ -58,7 +58,7 @@
                                 <span class="text text-danger">{{ $errors->first('password_confirm') }}</span>
                             @endif
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-5">
                             <label for="repassword" class="form-label">Re-enter Password</label>
                             <input type="password" class="form-control" placeholder="Re-enter your password"
                                 id="repassword" name="password_confirm">
@@ -66,7 +66,14 @@
                                 <span class="text text-danger">{{ $errors->first('password_confirm') }}</span>
                             @endif
                         </div>
-                        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                        <hr class="my-3" style="border-top: 1px solid black">
+                        <small class="d-flex gap-2 justify-content-end">
+                            <span class="text-muted">Already have an account?</span>
+                            <a class="text-decoration-none text-primary" href="{{ route('login') }}">Login</a>
+                        </small>
+                        <div class="w-100">
+                            <button type="submit" class="btn btn-dark mt-3" style="width: 100%">Sign up</button>
+                        </div>
                     </form>
                 </div>
             </div>
