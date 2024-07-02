@@ -8,9 +8,15 @@
                 <div
                     style="width: 100%; min-height: 150px; max-height:200px; background-image: url({{ asset('images/sky.jpg') }}); background-size: cover;">
                 </div>
-                <div class="position-relative" style="min-height: 80px; max-height: 80px; height: 80px">
+                <div class="position-relative d-flex justify-content-end align-items-center px-4"
+                    style="min-height: 80px; max-height: 80px; height: 80px">
                     <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle position-absolute"
                         style="width: 100px; top: -60%; left: 4%;" alt="Avatar" />
+                    <div class="d-flex justify-content-end">
+                        <a href="" class="btn btn-dark rounded-pill px-3">
+                            Edit Profile
+                        </a>
+                    </div>
                 </div>
                 <div class="container px-4 pb-4">
                     <h1 class="mb-0 card-title">{{ $user->name }}</h1>
