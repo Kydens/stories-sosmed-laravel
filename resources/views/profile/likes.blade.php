@@ -3,7 +3,7 @@
 @section('contentProfile')
     @foreach ($postLiked as $post)
         {{-- post --}}
-        <div class="card">
+        <div class="card mt-2">
             <a class="stretched-link"
                 href="{{ route('posts.getPost', ['username' => $post->users->username, 'id' => $post->id]) }}"></a>
             <div class="card-body d-flex gap-2 px-4 py-3 rounded post">
